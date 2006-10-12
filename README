@@ -4,13 +4,13 @@ GIMP-GAP is a collection of plug-ins that extends the GIMP's animation
 capabilities by supporting the creation of more complex animations.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  gimp2-2.2.11-1
-  glib2-2.10.2-1
-  gtk2-x11-2.8.17-1
+  cygwin-1.5.21-2
+  gimp2-2.2.12-1
+  glib2-2.10.3-1
+  gtk2-x11-2.8.20-1
   libavcodec049-0.4.9_pre1-1
   libjpeg62-6b-11
-  libxvidcore4-1.0.3-1
+  libxvidcore4-1.1.0-1
   mpeg_encode-1.5b-1
   mpeg2vidcodec-1.2-1
   sox-12.18.1-1
@@ -18,16 +18,16 @@ Runtime requirements:
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
+  cygwin-1.5.21-2
+  autoconf2.5-2.59-2
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.0-1
+  binutils-20060709-1
+  cygport-0.2.5-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  make-3.80-1
+  make-3.81-1
   pkg-config-0.20-1
-  sed-4.1.4-1
+  sed-4.1.5-1
   libmpeg3-devel-1.6-1
 
 Canonical homepage:
@@ -39,15 +39,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gimp2-gap-2.2.0-1-src.tar.bz2
+  unpack gimp2-gap-2.2.1-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./gimp-gap-2.2.0-1.sh all
+  cygport ./gimp-gap-2.2.1-1.cygport all
 
 This will create:
-  /usr/src/gimp2-gap-2.2.0-1-src.tar.bz2
-  /usr/src/gimp2-gap-2.2.0-1.tar.bz2
+  /usr/src/gimp2-gap-2.2.1-1-src.tar.bz2
+  /usr/src/gimp2-gap-2.2.1-1.tar.bz2
 
 -------------------------------------------
 
@@ -75,17 +75,18 @@ Files included in the binary package:
   /usr/lib/gimp/2.0/plug-ins/gap_wr_color_levels.exe
   /usr/lib/gimp/2.0/plug-ins/gap_wr_opacity.exe
   /usr/lib/gimp/2.0/plug-ins/gap_wr_trans.exe
-  /usr/share/doc/Cygwin/gimp2-gap-2.2.0.README
-  /usr/share/doc/gimp2-gap-2.2.0/AUTHORS
-  /usr/share/doc/gimp2-gap-2.2.0/COPYING
-  /usr/share/doc/gimp2-gap-2.2.0/ChangeLog
-  /usr/share/doc/gimp2-gap-2.2.0/INSTALL
-  /usr/share/doc/gimp2-gap-2.2.0/NEWS
-  /usr/share/doc/gimp2-gap-2.2.0/README
-  /usr/share/doc/gimp2-gap-2.2.0/README_developers
+  /usr/share/doc/Cygwin/gimp2-gap-2.2.1.README
+  /usr/share/doc/gimp2-gap-2.2.1/AUTHORS
+  /usr/share/doc/gimp2-gap-2.2.1/COPYING
+  /usr/share/doc/gimp2-gap-2.2.1/ChangeLog
+  /usr/share/doc/gimp2-gap-2.2.1/INSTALL
+  /usr/share/doc/gimp2-gap-2.2.1/NEWS
+  /usr/share/doc/gimp2-gap-2.2.1/README
+  /usr/share/doc/gimp2-gap-2.2.1/README_developers
   /usr/share/gimp/2.0/scripts/gap-dup-continue.scm
   /usr/share/gimp/2.0/scripts/sel-to-anim-img.scm
   /usr/share/locale/az/LC_MESSAGES/gimp20-gap.mo
+  /usr/share/locale/bg/LC_MESSAGES/gimp20-gap.mo
   /usr/share/locale/ca/LC_MESSAGES/gimp20-gap.mo
   /usr/share/locale/cs/LC_MESSAGES/gimp20-gap.mo
   /usr/share/locale/da/LC_MESSAGES/gimp20-gap.mo
@@ -105,10 +106,10 @@ Files included in the binary package:
   /usr/share/locale/ko/LC_MESSAGES/gimp20-gap.mo
   /usr/share/locale/lt/LC_MESSAGES/gimp20-gap.mo
   /usr/share/locale/ml/LC_MESSAGES/gimp20-gap.mo
+  /usr/share/locale/nb/LC_MESSAGES/gimp20-gap.mo
   /usr/share/locale/ne/LC_MESSAGES/gimp20-gap.mo
   /usr/share/locale/nl/LC_MESSAGES/gimp20-gap.mo
   /usr/share/locale/nn/LC_MESSAGES/gimp20-gap.mo
-  /usr/share/locale/no/LC_MESSAGES/gimp20-gap.mo
   /usr/share/locale/pa/LC_MESSAGES/gimp20-gap.mo
   /usr/share/locale/pl/LC_MESSAGES/gimp20-gap.mo
   /usr/share/locale/pt/LC_MESSAGES/gimp20-gap.mo
@@ -123,12 +124,16 @@ Files included in the binary package:
   /usr/share/locale/sv/LC_MESSAGES/gimp20-gap.mo
   /usr/share/locale/tr/LC_MESSAGES/gimp20-gap.mo
   /usr/share/locale/uk/LC_MESSAGES/gimp20-gap.mo
+  /usr/share/locale/vi/LC_MESSAGES/gimp20-gap.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/gimp20-gap.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/gimp20-gap.mo
 
 ------------------
 
 Port Notes:
+
+----- version 2.2.1-1 -----
+Version bump.
 
 ----- version 2.2.0-2 -----
 Rebuilt with libmpeg3 support.
