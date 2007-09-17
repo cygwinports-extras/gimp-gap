@@ -9,16 +9,16 @@ Runtime requirements:
   gimp2-2.2.17-1
   glib2-2.12.13-1
   gtk2-x11-2.10.14-1
-  libavcodec51-9958-1
-  libavformat51-9958-1
-  libavutil49-9958-1
+  libavcodec51-10270-1
+  libavformat51-10270-1
+  libavutil49-10270-1
   libintl8-0.15-1
   libjpeg62-6b-12
-  libmpeg3_1-1.5.4-1
+  libmpeg3_2-1.7-1
   libxvidcore4-1.1.3-1
   mpeg_encode-1.5b-1
   mpeg2vidcodec-1.2-1
-  sox-12.18.1-1
+  sox-14.0.0-1
   wavplay-1.4-1
 
 Build requirements:
@@ -43,15 +43,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gimp2-gap-2.2.1-1-src.tar.bz2
+  unpack gimp2-gap-2.2.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gimp-gap-2.2.1-1.cygport all
+  cygport ./gimp-gap-2.2.2-X.cygport all
 
 This will create:
-  /usr/src/gimp2-gap-2.2.1-1-src.tar.bz2
-  /usr/src/gimp2-gap-2.2.1-1.tar.bz2
+  /usr/src/gimp2-gap-2.2.2-X-src.tar.bz2
+  /usr/src/gimp2-gap-2.2.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -135,6 +135,12 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.2.2-2 -----
+Patched for compatibility with libmpeg3-1.7.
+
+----- version 2.2.2-1 -----
+Version bump.
 
 ----- version 2.2.1-1 -----
 Version bump.
