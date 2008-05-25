@@ -1,0 +1,25 @@
+ORIG_PN=gimp-gap
+
+inherit gnome2
+
+DESCRIPTION="GIMP animation plugins"
+HOMEPAGE="http://www.gimp.org/"
+SRC_URI="ftp://ftp.gimp.org/pub/gimp/plug-ins/v${PV_MAJ_MIN}/gap/${ORIG_PN}-${PV}.tar.bz2"
+
+DOCS="gap/README gap/README_developers"
+
+src_compile() {
+	cd ${S}
+	gnome2_autoreconf
+
+	cd ${B}
+	cygconf \
+		--enable-gdkpixbuf-pview \
+		--with-preinstalled-libmpeg3incdir=/usr/include/libmpeg3 \
+		--with-preinstalled-libmpeg3=/usr/lib/libmpeg3.dll.a
+	cygmake \
+		GAP_VINCS_FFMPEG="-I/usr/include/ffmpeg" \
+		GAP_VLIBS_FFMPEG="-lavformat -lavcodec -lavutil" \
+		GAP_VINCS_MPEG3="-I/usr/include/libmpeg3" \
+		GAP_VLIBS_MPEG3="-lmpeg3"
+}
