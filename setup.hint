@@ -1,5 +1,0 @@
-category: Graphics Video
-requires: gimp2 glib2 gtk2-x11 libavcodec51 libavformat52 libavutil49 libintl8 libmpeg3_2 libxvidcore4 mpeg_encode mpeg2vidcodec sox wavplay
-sdesc: "GIMP animation plugins"
-ldesc: "GIMP-GAP is a collection of plug-ins that extends the GIMP's animation
-capabilities by supporting the creation of more complex animations."
