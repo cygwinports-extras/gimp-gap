@@ -1,0 +1,8 @@
+--- origsrc/gimp-gap/extern_libs/configure_options_ffmpeg.txt	2013-01-28 01:27:06.000000000 -0600
++++ src/gimp-gap/extern_libs/configure_options_ffmpeg.txt	2013-01-29 02:29:56.422816600 -0600
+@@ -20,4 +20,5 @@
+ #  --enable-swscale
+ #  --enable-nonfree
+ # options for the ffmpeg configure
++--disable-dxva2
+ 
