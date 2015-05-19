@@ -3,7 +3,7 @@ inherit gnome2 git
 
 NAME="gimp-gap"
 VERSION=2.7.0
-RELEASE=4
+RELEASE=5
 CATEGORY="Graphics"
 SUMMARY="GIMP animation plugins"
 DESCRIPTION="GIMP-GAP is a collection of plug-ins that extends the GIMP's animation
